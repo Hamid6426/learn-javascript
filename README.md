@@ -2,11 +2,11 @@
 
 ## Why do we use javascript?
 
-We use javascript because it enable us to add functionality to our HTML and CSS.
+We use javascript because it enables us to add functionality to our HTML and CSS.
 
 #### For Example:
 - Adding an alert function when a button is clicked
-- Add a function which will save form data
+- Add a function that will save form data
 
 ## Ways to use javascript in an HTML?
 
@@ -267,7 +267,217 @@ switch (expression) {
 ### Loops:
 
 - for
+for (initialization; condition; increment) {
+    // Code to execute on each iteration
+} 
+
 - while
+while (condition) {
+    // Code to execute while condition is true
+}
+
 - do-while
+do {
+    // Code to execute
+} while (condition);
+
 - for...of
+for (let variable of iterable) {
+    // Code to execute for each value
+}
+
+let fruits = ["apple", "banana", "cherry"];
+
+for (let fruit of fruits) {
+    console.log(fruit);
+}
+// Output:
+// apple
+// banana
+// cherry
+
+- for...in
+for (let key in object) {
+    // Code to execute for each key
+}
+
+let person = { name: "Hamid", age: 25, country: "Pakistan" };
+
+for (let key in person) {
+    console.log(`${key}: ${person[key]}`);
+}
+// Output:
+// name: Hamid
+// age: 25
+// country: Pakistan
+
+## Functions
+
+### 1. What Are Functions?
+Functions are defined once and can be executed (or called) as many times as needed.
+They can accept inputs (parameters) and return outputs (return values).
+
+### 2. Declaring Functions
+Function Declaration
+A standard way to define a function.
+
+function functionName(parameters) {
+    // Function body
+    return value; // Optional
+}
+
+function greet(name) {
+    return `Hello, ${name}!`;
+}
+console.log(greet("Hamid")); // Output: "Hello, Hamid!"
+
+Function Expression
+A function can also be stored in a variable. This is called a function expression.
+
+const functionName = function(parameters) {
+    // Function body
+};
+
+const add = function(a, b) {
+    return a + b;
+};
+console.log(add(3, 4)); // Output: 7
+
+
+Arrow Functions (ES6)
+A shorter syntax for writing functions.
+
+const functionName = (parameters) => {
+    // Function body
+    return value; // Optional
+};
+
+
+If the function has a single expression, you can omit the braces and return keyword.
+
+const multiply = (a, b) => a * b;
+console.log(multiply(2, 3)); // Output: 6
+
+3. Parameters and Arguments
+Parameters: Variables defined in the function declaration.
+Arguments: Values passed to the function when called.
+
+function greet(firstName, lastName) {
+    return `Hello, ${firstName} ${lastName}`;
+}
+console.log(greet("Hamid", "Khan")); // Output: "Hello, Hamid Khan"
+
+
+Default Parameters
+You can assign default values to parameters if no argument is provided.
+
+function greet(name = "Guest") {
+    return `Hello, ${name}`;
+}
+console.log(greet()); // Output: "Hello, Guest"
+
+
+4. Return Statement
+The return statement specifies the value that a function should output. If no return is provided, the function returns undefined.
+
+function square(num) {
+    return num * num;
+}
+console.log(square(4)); // Output: 16
+
+
+5. Function Scope
+Functions define a new scope. Variables declared inside a function are not accessible outside of it.
+
+function example() {
+    let localVar = "I am local";
+    console.log(localVar);
+}
+example();
+// console.log(localVar); // Error: localVar is not defined
+
+6. Anonymous Functions
+Functions without a name are called anonymous functions. These are often used as arguments to other functions or as immediate invocations.
+
+setTimeout(function() {
+    console.log("This runs after 2 seconds");
+}, 2000);
+
+
+7. Immediately Invoked Function Expressions (IIFE)
+An IIFE runs immediately after it is defined.
+
+(function() {
+    console.log("I run immediately!");
+})();
+
+8. Higher-Order Functions
+Functions that take other functions as arguments or return a function are called higher-order functions.
+
+function greet(callback) {
+    callback();
+}
+
+greet(() => console.log("Hello, world!")); // Output: "Hello, world!"
+
+
+9. Callback Functions
+A callback is a function passed as an argument to another function. It allows asynchronous or sequential execution.
+
+function processUserInput(callback) {
+    let name = "Hamid";
+    callback(name);
+}
+
+processUserInput((name) => {
+    console.log(`Hello, ${name}`);
+});
+// Output: "Hello, Hamid"
+
+10. Rest and Spread Operators in Functions
+
+Rest Operator
+Allows you to represent an indefinite number of arguments as an array.
+
+function sum(...numbers) {
+    return numbers.reduce((total, num) => total + num, 0);
+}
+console.log(sum(1, 2, 3, 4)); // Output: 10
+
+
+Spread Operator
+Allows you to expand elements of an array or object.
+
+const numbers = [1, 2, 3];
+function multiply(a, b, c) {
+    return a * b * c;
+}
+console.log(multiply(...numbers)); // Output: 6
+
+
+11. Recursion
+A function that calls itself is recursive. Useful for problems like factorial or traversing a tree.
+
+function factorial(n) {
+    if (n === 1) return 1;
+    return n * factorial(n - 1);
+}
+console.log(factorial(5)); // Output: 120
+
+
+12. Closures
+A closure is a function that retains access to its outer scope, even after the outer function has executed.
+
+function outer() {
+    let count = 0;
+    return function inner() {
+        count++;
+        return count;
+    };
+}
+const increment = outer();
+console.log(increment()); // Output: 1
+console.log(increment()); // Output: 2
+
+
 
