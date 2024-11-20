@@ -192,4 +192,82 @@ console.log(typeof 42); // "number"
 console.log(typeof null); // "object" (quirk in JavaScript)
 console.log(typeof undefined); // "undefined"
 
+## OPERTORS
+
+### 1. Arithmetic Operators
+These operators perform mathematical operations on numbers.
+
++ (Addition): Adds two operands.
+- (Subtraction): Subtracts the second operand from the first.
+* (Multiplication): Multiplies two operands.
+/ (Division): Divides the first operand by the second.
+% (Modulus): Returns the remainder of division.
+++ (Increment): Increases the operand by 1.
+-- (Decrement): Decreases the operand by 1.
+
+### 2. Comparison Operators
+These operators compare two values and return a Boolean value (true or false).
+
+== (Equal to): Checks if two operands are equal.
+=== (Strict equal to): Checks if two operands are equal in value and type.
+!= (Not equal to): Checks if two operands are not equal.
+!== (Strict not equal to): Checks if two operands are not equal in value or type.
+> (Greater than): Checks if the first operand is greater than the second.
+< (Less than): Checks if the first operand is less than the second.
+>= (Greater than or equal to): Checks if the first operand is greater than or equal to the second.
+<= (Less than or equal to): Checks if the first operand is less than or equal to the second.
+
+### 3. Logical Operators
+These operators are used to combine conditional statements.
+
+&& (Logical AND): Returns true if both conditions are true.
+|| (Logical OR): Returns true if at least one condition is true.
+! (Logical NOT): Reverses the Boolean value of the condition.
+
+### 4. Assignment Operators
+These operators assign values to variables.
+
+=: Assigns a value to a variable.
++=: Adds the right operand to the left operand and assigns the result to the left operand.
+-=: Subtracts the right operand from the left operand and assigns the result to the left operand.
+*=: Multiplies the left operand by the right operand and assigns the result to the left operand.
+/=: Divides the left operand by the right operand and assigns the result to the left operand.
+%=: Applies the modulus operation on the left operand and assigns the result to the left operand.
+
+### 5. Ternary Operator (Conditional Expression)
+The ternary operator provides a shorthand for if-else conditions. It returns one value if the condition is true and another if the condition is false.
+
+#### Syntax:
+condition ? value_if_true : value_if_false
+
+- let x = 10;
+- let result = (x % 2 === 0) ? "Even" : "Odd";
+- console.log(result);  // Even
+
+## Control Flow
+
+### Conditional Statements:
+- if
+- else if
+- else
+
+### Switch statements
+
+switch (expression) {
+    case value1:
+        // Code to execute if expression === value1
+        break;
+    case value2:
+        // Code to execute if expression === value2
+        break;
+    default:
+        // Code to execute if no case matches
+}
+
+### Loops:
+
+- for
+- while
+- do-while
+- for...of
 
