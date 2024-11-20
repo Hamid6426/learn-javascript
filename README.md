@@ -132,7 +132,7 @@ These are immutable and stored directly in the memory.
 String
 
 Represents textual data.
-Enclosed in single ('), double ("), or backticks (`) for template literals.
+They are enclosed in single ('), double ("), or backticks (`) for template literals.
 Example:
 javascript
 Copy code
@@ -191,3 +191,5 @@ console.log(typeof "Hello"); // "string"
 console.log(typeof 42); // "number"
 console.log(typeof null); // "object" (quirk in JavaScript)
 console.log(typeof undefined); // "undefined"
+
+
