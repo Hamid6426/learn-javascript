@@ -55,89 +55,24 @@ Adding external JavaScript to HTML
 - Reassignment: Cannot be reassigned or redeclared.
 - Usage: Use for constants or variables that won't change
  
-`const z = 15;
+`const z = 15;<br/>
  // z = 20; // TypeError: Assignment to constant variable`
 
-### Data Types in JavaScript
-JavaScript has two main categories of data types:
-1. Primitive Types
-2. Reference Types
-
-#### 1. Primitive Data Types
-String
-    • Represents textual data.
-    • Enclosed in single ('), double ("), or backticks (`) for template literals.
-<code>let name = "Hamid";
- let greeting = `Hello, ${name}`;</code>
-
-Number
-    • Represents numeric values
-int
-float
-let age = 25;
-let pi = 3.14;
-Boolean 
-Represents logical values 
-true
-false
-let isDeveloper = true;
-Undefined 
-A variable that has been declared but not assigned a value. 
-let x; // undefined
-Null
-    • Represents an intentional absence of any value (manually assigned).
-let result = null;
-
-BigInt
-
-Used for very large integers.
-let bigNumber = 123456789012345678901234567890n;
-
-Symbol
-
-Unique and immutable value, often used as object keys.
-let id = Symbol("uniqueID");
-
-## 2. Reference Data Types
-These are mutable and stored as references in memory.
-
-### Object
-A collection of key-value pairs.
-
-let user = { name: "Hamid", age: 25 };
-
-Array
-
-Ordered collection of values.
-let numbers = [1, 2, 3, 4];
-
-Function
-
-Block of reusable code.
-function greet() {
-  console.log("Hello, world!");
-}
-
-
-Yes, you're correct! After understanding variable declarations (var, let, const), the next step in JavaScript basics is Data Types.
-
-Data Types in JavaScript
+## Data Types in JavaScript
 JavaScript has two main categories of data types:
 
-Primitive Types
-Reference Types
+- Primitive Types
+- Reference Types
+
 1. Primitive Data Types
 These are immutable and stored directly in the memory.
 
-String
+### String
 
 Represents textual data.
 They are enclosed in single ('), double ("), or backticks (`) for template literals.
-Example:
-javascript
-Copy code
-let name = "Hamid";
-let greeting = `Hello, ${name}`;
+`let name = "Hamid";`
+`let greeting = Hello, ${name};`
 
 ### Boolean
 Represents logical values (true or false).
